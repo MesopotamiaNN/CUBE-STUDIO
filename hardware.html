@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="أجهزة هاردوير من CUBE STUDIOS - Cube OS و Ethion">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <title>🔧 هاردوير | CUBE STUDIOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-content"><div class="loader-cube"></div><p class="loader-text">CUBE STUDIOS</p></div></div>
+<div id="particles-js"></div>
+<div class="search-overlay" id="searchOverlay"><span class="search-close" onclick="toggleSearch()">✕</span><div class="search-box"><input type="text" id="searchInput" placeholder="🔍 ابحث..." oninput="searchSite()"><div class="search-results" id="searchResults"></div></div></div>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="logo"><div class="logo-icon"><img src="images/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"></div><span class="logo-text">CUBE STUDIOS</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="games.html">🎮 الألعاب</a></li>
+            <li><a href="simulators.html">🧠 المحاكيات</a></li>
+            <li><a href="hardware.html" class="active">🔧 هاردوير</a></li>
+            <li><a href="software.html">💼 برمجيات</a></li>
+            <li><a href="creative.html">🎨 إبداعي</a></li>
+            <li><a href="blog.html">📝 المدونة</a></li>
+            <li><a href="about.html">👥 عن الشركة</a></li>
+            <li><a href="contact.html" class="nav-cta">📞 اتصل بنا</a></li>
+        </ul>
+        <div class="nav-actions"><button class="theme-btn" onclick="toggleTheme()">🌙</button><button class="search-btn" onclick="toggleSearch()">🔍</button><button class="lang-btn" onclick="switchLanguage()">🌐 AR</button></div>
+        <div class="hamburger">☰</div>
+    </div>
+</nav>
+
+<section class="page-header"><h1>🔧 أجهزة هاردوير</h1><p>أنظمة تشغيل وأجهزة متخصصة من تطوير CUBE STUDIOS</p></section>
+
+<section class="section">
+    <div class="container">
+        <div class="about-section fade-in">
+            <div class="about-image" style="height:450px;"><img src="images/hardware/cube-os.png" alt="Cube OS" style="width:100%;height:100%;object-fit:cover;"></div>
+            <div class="about-content">
+                <span class="product-card-badge badge-ready" style="position:static;display:inline-block;margin-bottom:15px;">✅ تستخدمه مؤسسات</span>
+                <h2>Cube OS</h2>
+                <p style="color:var(--muted);font-size:16px;line-height:2;margin-bottom:20px;">نظام تشغيلي متكامل تم تطويره خصيصاً لتلبية احتياجات المؤسسات. يتميز بالأداء العالي، الأمان، وسهولة الاستخدام.</p>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:25px;"><div style="color:var(--text);">✅ أداء عالي</div><div style="color:var(--text);">🔒 أمان متقدم</div><div style="color:var(--text);">🏢 جاهز للمؤسسات</div><div style="color:var(--text);">🔄 تحديثات دورية</div></div>
+                <a href="contact.html" class="btn btn-primary">📞 اطلب Cube OS</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:var(--panel);">
+    <div class="container">
+        <div class="about-section fade-in">
+            <div class="about-content">
+                <span class="product-card-badge badge-ready" style="position:static;display:inline-block;margin-bottom:15px;">✅ فعال</span>
+                <h2>Ethion</h2>
+                <p style="color:var(--muted);font-size:16px;line-height:2;margin-bottom:20px;">جهاز متخصص في المطبوعات المشفرة. يوفر أعلى مستويات الأمان والحماية للمستندات والبيانات الحساسة.</p>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:25px;"><div style="color:var(--text);">🔐 تشفير متقدم</div><div style="color:var(--text);">📄 طباعة آمنة</div><div style="color:var(--text);">🛡️ حماية البيانات</div><div style="color:var(--text);">🔑 مفاتيح تشفير</div></div>
+                <a href="contact.html" class="btn btn-primary">📞 اطلب Ethion</a>
+            </div>
+            <div class="about-image" style="height:450px;"><img src="images/hardware/ethion.png" alt="Ethion" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/9647711618255" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<footer>
+    <div class="footer-grid"><div class="footer-col"><h4>🧊 CUBE STUDIOS</h4><p>شركة تقنية عراقية متخصصة في الألعاب، المحاكيات، الهاردوير، والبرمجيات.</p></div><div class="footer-col"><h4>📄 روابط</h4><a href="index.html">الرئيسية</a><a href="hardware.html">هاردوير</a><a href="contact.html">اتصل بنا</a></div><div class="footer-col"><h4>📞 تواصل</h4><a href="mailto:cubegames.iraq@gmail.com"><i class="fas fa-envelope"></i> cubegames.iraq@gmail.com</a><a href="tel:+9647711618255"><i class="fas fa-phone"></i> +964 7711618255</a></div><div class="footer-col"><h4>🧊 الشركة</h4><a href="about.html">من نحن</a><a href="contact.html">اتصل بنا</a></div></div>
+    <div class="footer-bottom"><p>© <span class="current-year">2025</span> CUBE STUDIOS. جميع الحقوق محفوظة | Mustafa Majeed</p></div>
+</footer>
+
+<script src="lib/particles.min.js"></script>
+<script src="js/main.js"></script>
+<script>particlesJS('particles-js', {particles:{number:{value:40},color:{value:'#d97706'},shape:{type:'circle'},opacity:{value:0.2},size:{value:2},line_linked:{enable:true,color:'#d97706',opacity:0.08},move:{enable:true,speed:1}}});</script>
+</body>
+</html>

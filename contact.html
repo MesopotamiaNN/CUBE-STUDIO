@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اتصل بـ CUBE STUDIOS">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <title>📞 اتصل بنا | CUBE STUDIOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-content"><div class="loader-cube"></div><p class="loader-text">CUBE STUDIOS</p></div></div>
+<div id="particles-js"></div>
+<div class="search-overlay" id="searchOverlay"><span class="search-close" onclick="toggleSearch()">✕</span><div class="search-box"><input type="text" id="searchInput" placeholder="🔍 ابحث..." oninput="searchSite()"><div class="search-results" id="searchResults"></div></div></div>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="logo"><div class="logo-icon"><img src="images/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"></div><span class="logo-text">CUBE STUDIOS</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="games.html">🎮 الألعاب</a></li>
+            <li><a href="simulators.html">🧠 المحاكيات</a></li>
+            <li><a href="hardware.html">🔧 هاردوير</a></li>
+            <li><a href="software.html">💼 برمجيات</a></li>
+            <li><a href="creative.html">🎨 إبداعي</a></li>
+            <li><a href="blog.html">📝 المدونة</a></li>
+            <li><a href="about.html">👥 عن الشركة</a></li>
+            <li><a href="contact.html" class="nav-cta">📞 اتصل بنا</a></li>
+        </ul>
+        <div class="nav-actions"><button class="theme-btn" onclick="toggleTheme()">🌙</button><button class="search-btn" onclick="toggleSearch()">🔍</button><button class="lang-btn" onclick="switchLanguage()">🌐 AR</button></div>
+        <div class="hamburger">☰</div>
+    </div>
+</nav>
+
+<section class="page-header"><h1>📞 اتصل بنا</h1><p>نحن هنا للإجابة على استفساراتك</p></section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-section fade-in">
+            <div class="contact-info">
+                <h2>تواصل معنا</h2>
+                <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><div style="font-weight:700;">البريد الإلكتروني</div><a href="mailto:cubegames.iraq@gmail.com" style="color:var(--accent);text-decoration:none;">cubegames.iraq@gmail.com</a></div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><div style="font-weight:700;">الهاتف / واتساب</div><a href="tel:+9647711618255" style="color:var(--accent);text-decoration:none;">+964 7711618255</a></div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fab fa-facebook"></i></div><div><div style="font-weight:700;">فيسبوك</div><a href="https://facebook.com/Cubestudio.iq" target="_blank" style="color:var(--accent);text-decoration:none;">facebook.com/Cubestudio.iq</a></div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fab fa-youtube"></i></div><div><div style="font-weight:700;">يوتيوب</div><a href="https://youtube.com/@studios_cube" target="_blank" style="color:var(--accent);text-decoration:none;">youtube.com/@studios_cube</a></div></div>
+            </div>
+            <div class="contact-form">
+                <h3 style="font-size:24px;font-weight:700;margin-bottom:20px;">أرسل رسالة</h3>
+                <form><input type="text" name="name" placeholder="الاسم الكامل" required><input type="email" name="email" placeholder="البريد الإلكتروني" required><input type="text" name="subject" placeholder="الموضوع"><textarea name="message" placeholder="اكتب رسالتك هنا..." required></textarea><button type="submit" class="btn btn-primary" style="width:100%;padding:16px;">📩 إرسال</button></form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/9647711618255" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<footer>
+    <div class="footer-grid"><div class="footer-col"><h4>🧊 CUBE STUDIOS</h4><p>شركة تقنية عراقية متخصصة في الألعاب، المحاكيات، الهاردوير، والبرمجيات.</p></div><div class="footer-col"><h4>📄 روابط</h4><a href="index.html">الرئيسية</a><a href="contact.html">اتصل بنا</a><a href="about.html">عن الشركة</a></div><div class="footer-col"><h4>📞 تواصل</h4><a href="mailto:cubegames.iraq@gmail.com"><i class="fas fa-envelope"></i> cubegames.iraq@gmail.com</a><a href="tel:+9647711618255"><i class="fas fa-phone"></i> +964 7711618255</a></div><div class="footer-col"><h4>🧊 الشركة</h4><a href="about.html">من نحن</a><a href="contact.html">اتصل بنا</a></div></div>
+    <div class="footer-bottom"><p>© <span class="current-year">2025</span> CUBE STUDIOS. جميع الحقوق محفوظة | Mustafa Majeed</p></div>
+</footer>
+
+<script src="lib/particles.min.js"></script>
+<script src="js/main.js"></script>
+<script>particlesJS('particles-js', {particles:{number:{value:40},color:{value:'#0891b2'},shape:{type:'circle'},opacity:{value:0.2},size:{value:2},line_linked:{enable:true,color:'#0891b2',opacity:0.08},move:{enable:true,speed:1}}});</script>
+</body>
+</html>
